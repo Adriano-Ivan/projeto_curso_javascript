@@ -71,7 +71,10 @@ const adicionarPaciente = function (e) {
   adicionarTdsAtr(pacienteTr, pacienteTds);
 
   // Adiciona tr à tabela
+  if (!validaPaciente(pacienteTr)) {
+    return;
+  }
   tabela.appendChild(pacienteTr);
-  validaPaciente(pacienteTr);
+
   limparFormulario(form);
 };

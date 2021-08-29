@@ -140,3 +140,6 @@ button:disabled {
 .background-page {
   background-color: #eee;
 }
+#mensagem-erro {
+  color: lightcoral;
+}
