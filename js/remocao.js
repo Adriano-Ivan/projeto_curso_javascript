@@ -1,6 +1,8 @@
 tabela.addEventListener("dblclick", function (event) {
-  if (event.target.tagName != "TH")
+  if (event.target.tagName === "TD") {
     event.target.parentNode.classList.add("fade-out");
+    console.log(event.target.tagName);
+  }
   const remove = function () {
     event.target.closest(".paciente").remove();
     // const alvoDoEvento = event.target;

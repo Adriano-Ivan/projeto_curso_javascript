@@ -159,3 +159,6 @@ label {
   margin-top: 10px;
   outline: none;
 }
+.element-none {
+  display: none;
+}
